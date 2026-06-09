@@ -1,0 +1,37 @@
+{
+    "name": "letkode/helpers-bundle",
+    "description": "PHP 8.4 utility helpers for Symfony applications",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "ext-intl": "*",
+        "nesbot/carbon": "^3.0",
+        "symfony/uid": "^7.0",
+        "symfony/dependency-injection": "^7.0",
+        "symfony/http-kernel": "^7.0",
+        "symfony/translation": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11",
+        "phpstan/phpstan": "^2",
+        "friendsofphp/php-cs-fixer": "^3.95"
+    },
+    "autoload": {
+        "psr-4": {
+            "Letkode\\HelpersBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Letkode\\HelpersBundle\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "symfony": {
+            "bundles": {
+                "Letkode\\HelpersBundle\\LetkodeHelpersBundle": ["all"]
+            }
+        }
+    }
+}
